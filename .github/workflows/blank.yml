@@ -1,0 +1,15 @@
+name: testing inputs
+inputs:
+  app_name:
+    type: string
+    default: helloword
+
+    
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: sending default app-name
+      run: echo "my application name is ${{ inputs.app_name }}"
