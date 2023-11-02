@@ -1,11 +1,9 @@
 name: testing inputs
+on: [push]
 inputs:
   app_name:
     type: string
     default: helloword
-
-    
-
 jobs:
   greet:
     runs-on: ubuntu-latest
