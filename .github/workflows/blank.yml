@@ -1,5 +1,11 @@
 name: testing inputs
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       app_name:
@@ -7,7 +13,6 @@ on: [push]
 jobs:
   greet:
     runs-on: ubuntu-latest
-
     steps:
     - name: sending default app-name
       run: echo "my application name is ${{ inputs.app_name }}"
