@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: sending default app-name
-      run: echo "my application name is ${{ inputs.app_name }}"
+      run: echo "my application name is ${{ github.events.inputs.app_name }}"
