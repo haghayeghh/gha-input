@@ -1,9 +1,9 @@
 name: testing inputs
 on: [push]
-workflow_dispatch:
-  inputs:
-    app_name:
-      default: helloworld
+  workflow_dispatch:
+    inputs:
+      app_name:
+        default: helloworld
 jobs:
   greet:
     runs-on: ubuntu-latest
