@@ -1,13 +1,13 @@
 name: testing inputs
 on: [push]
-  workflow_dispatch:
-    inputs:
-      app_name:
-        default: helloworld
-  jobs:
-    greet:
-      runs-on: ubuntu-latest
+workflow_dispatch:
+  inputs:
+    app_name:
+      default: helloworld
+jobs:
+  greet:
+    runs-on: ubuntu-latest
 
-      steps:
-      - name: sending default app-name
-        run: echo "my application name is ${{ inputs.app_name }}"
+    steps:
+    - name: sending default app-name
+      run: echo "my application name is ${{ inputs.app_name }}"
