@@ -1,12 +1,8 @@
-name: testing inputs
+name: testing inputs for gha
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
     inputs:
       app_name:
         default: helloworld
